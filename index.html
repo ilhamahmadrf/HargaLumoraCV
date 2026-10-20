@@ -24,6 +24,9 @@ h2{font-size:23px;font-weight:800;margin-bottom:17px}
 .price-line{flex:1;min-width:8px;border-bottom:1px solid #656565}
 .price{border:1px solid #555;border-radius:28px;padding:8px 11px;min-width:108px;text-align:center;font-size:14px;font-weight:bold;white-space:nowrap}
 .hint{font-size:13px;color:var(--muted);line-height:1.6;margin:-5px 0 16px}
+.promo-info{margin:0 0 18px;padding:12px 14px;border:1px solid rgba(255,255,255,.95);border-left:4px solid #555;border-radius:12px;background:rgba(255,255,255,.32)}
+.promo-info strong{display:block;font-size:13px;margin-bottom:4px}
+.promo-info p{font-size:12px;line-height:1.5;color:var(--muted);margin:0}
 .service{display:flex;align-items:center;gap:11px;padding:15px 12px;border:1.5px solid #fff;border-radius:15px;margin:10px 0;background:rgba(255,255,255,.27);cursor:pointer;transition:.18s}
 .service.selected{background:rgba(255,255,255,.65);border-color:#555;box-shadow:0 3px 10px #3331}
 .service input{width:19px;height:19px;accent-color:#252525;flex-shrink:0}
@@ -61,18 +64,13 @@ h2{font-size:23px;font-weight:800;margin-bottom:17px}
   </header>
 
   <section class="panel">
-    <h2 class="section-title">Daftar Harga</h2>
-    <div class="price-item"><span class="price-icon">▤</span><span class="price-name">CV</span><span class="price-line"></span><span class="price">Rp10.000</span></div>
-    <div class="price-item"><span class="price-icon">✉</span><span class="price-name">Surat Lamaran</span><span class="price-line"></span><span class="price">Rp9.000</span></div>
-    <div class="price-item"><span class="price-icon">▧</span><span class="price-name">Surat Resign</span><span class="price-line"></span><span class="price">Rp8.000</span></div>
-    <div class="price-item"><span class="price-icon">▧</span><span class="price-name">Edit Foto</span><span class="price-line"></span><span class="price">Rp7.000</span></div>
-    <div class="price-item"><span class="price-icon">▣</span><span class="price-name">Gabung Berkas PDF</span><span class="price-line"></span><span class="price">Rp5.000</span></div>
-  </section>
-
-  <section class="panel">
     <h2 class="section-title">Paket Hemat</h2>
-    <p class="hint">Pilih layanan yang ingin dipesan. Harga akan dihitung otomatis.</p>
+    <p class="hint">Pilih layanan yang dibutuhkan. Total harga dihitung otomatis.</p>
 
+    <div class="promo-info">
+      <strong>Promo Diskon</strong>
+      <p>Pesan minimal 2 layanan utama untuk mendapatkan potongan harga.</p>
+    </div>
     <label class="service">
       <input type="checkbox" value="CV" data-price="10000" data-diskon="true">
       <span class="service-info"><strong>CV</strong><small>Pembuatan CV profesional</small></span>
@@ -116,7 +114,7 @@ h2{font-size:23px;font-weight:800;margin-bottom:17px}
     <div class="footer-brand">LUMORA.CV</div>
     <p>CV &amp; CAREER STUDIO</p>
     <p>Your Future, Better Presented.</p>
-    <p style="margin-top:12px">WhatsApp: 0851-6812-2412</p>
+    <p style="margin-top:12px">WhatsApp: 0851 8130 9503</p>
   </footer>
   <div class="watermark">@lumora.cv</div>
 </main>
